@@ -1,0 +1,273 @@
+/*RESET*/
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  color: #051405;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.flex {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.g-1_s-1_b-400 {
+  -webkit-flex: 1 1 400px;
+  -moz-flex: 1 1 400px;
+  -ms-flex: 1 1 400px;
+  -o-flex: 1 1 400px;
+  flex: 1 1 400px;
+}
+
+/*INTRODUCAO*/
+
+.header-logo {
+  text-align: center;
+  padding: 20px 0;
+  background: url(img/banner-hero-maior.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.header-logo h1 {
+  color:  #2eb82e;
+  font-size: 5em;
+}
+
+.introducao {
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.introducao h1 {
+  font-size: 2.125em;
+  line-height: 1.4;
+  text-shadow: 0px 0px 1px #2eb82e;
+}
+
+/*INFO*/
+
+.sobre h2, .sobre h3 {
+  letter-spacing: .1em;
+}
+
+
+.info {
+  padding: 30px 50px 0px 50px;
+  line-height: 1.4;
+}
+
+.info div {
+  margin-bottom: 40px;
+}
+
+.lista li {
+  margin-bottom: 10px;
+}
+
+.lista li h3::before {
+  content: ' ';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #2eb82e;
+  color: white;
+  text-align: center;
+}
+
+.lista li:nth-child(1) h3::before {
+  content: '1';
+}
+
+.lista li:nth-child(2) h3::before {
+  content: '2';
+}
+
+.lista li:nth-child(3) h3::before {
+  content: '3';
+}
+
+/*FORMULARIO*/
+
+.form {
+  border: 5px solid #2eb82e;
+  border-radius: 15px;
+  padding: 30px;
+  -webkit-background: linear-gradient(rgba(46,184,46,.5),rgba(46,184,46,.1));
+  -moz-background: linear-gradient(rgba(46,184,46,.5),rgba(46,184,46,.1));
+  -ms-background: linear-gradient(rgba(46,184,46,.5),rgba(46,184,46,.1));
+  -o-background: linear-gradient(rgba(46,184,46,.5),rgba(46,184,46,.1));
+  background: linear-gradient(rgba(46,184,46,.5),rgba(46,184,46,.1));
+}
+
+.form-fields {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(46,184,46,.2);
+  display: flex;
+}
+
+.form-fields label {
+  font-size: 1.1em;
+  color: #2eb82e;
+  margin: 0px 20px 40px 0;
+  padding-top: 3px;
+}
+
+.form-labels {
+  flex-direction: column;
+}
+
+.form-inputs {
+  flex-direction: column;
+  flex: 2;
+}
+
+
+.form-fields input {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  border: 1px solid #051405;
+  border-radius: 5px;
+  background: #FFF;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #051405;
+}
+
+.form-fields input:focus {
+  box-shadow: inset 0 0 0 1px #2eb82e;
+}
+
+.btn {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.btn span {
+  display: inline-block;
+}
+
+.btn-enviar {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #051405;
+  background: linear-gradient(#2eb82e,#248f24);
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-shadow: 0 0 0 1px #051405;
+  cursor: pointer;
+}
+
+.form-footer {
+  text-align: right;
+  margin-top: 20px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(46,184,46,.2);
+}
+
+/*CITACAO*/
+
+.citacao {
+  font-size: 1.32em;
+  text-align: center;
+  padding: 40px 100px;
+}
+
+.citacao p {
+  margin-bottom: 20px;
+}
+
+.foto {
+  width: 60px;
+  height: 60px;
+  background: #2eb82e;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+cite span {
+  display: block;
+}
+
+.funcao {
+  font-size: .7em;
+}
+
+/*FOOTER*/
+
+.footer {
+  justify-content: space-between;
+  padding: 40px 0;
+  border-top: 1px solid rgba(46,184,46,.2);
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:500px) {
+  .form-fields input {
+    width: 215px;
+  }
+  
+  .btn span {
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    padding: 30px 10px 0px 10px;
+  }
+  
+  .citacao {
+  padding: 40px 10px;
+  }
+  
+  .footer span {
+    margin-bottom: 10px;
+  }
+}
+
+
